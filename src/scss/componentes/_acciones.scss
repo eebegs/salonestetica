@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.acciones{
+
+    margin-top: v.$separacion;
+    @include m.tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a{
+        color: v.$fucsia;
+        display: block;
+        margin-bottom: calc(v.$separacion / 2);
+        text-align: center;
+        transition: all .4s ease;
+
+        .acciones-enlaces{
+            color: v.$fucsia;
+        }
+
+        &:hover{
+            color: darken(lightgrey, 10%);
+        }
+    }
+
+    .enlace2{
+        background-color: v.$fucsia;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 2rem;
+        margin: 0;
+        
+    }
+}
+

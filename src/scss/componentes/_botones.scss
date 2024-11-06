@@ -1,0 +1,17 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m; 
+
+.boton{
+
+    @include m.boton(v.$fucsia, v.$blanco);
+}
+
+
+.botonsesion{
+
+    @include m.botonsesion(v.$rojo, v.$blanco);
+}
+
+.boton-eliminar{
+    @include m.boton(v.$rojo, v.$blanco);
+}
